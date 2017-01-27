@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.biro.stockmarket.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/staticSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Symbol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/staticPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staticSymbol"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/staticChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staticPrice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Change"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/staticDayLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staticChange"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Low"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/changeStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staticChange"
+            android:layout_alignBottom="@+id/staticChange"
+            android:layout_alignLeft="@+id/priceStock"
+            android:layout_alignStart="@+id/priceStock"
+            android:text="+50"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/dayLowStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staticDayLow"
+            android:layout_alignBottom="@+id/staticDayLow"
+            android:layout_alignLeft="@+id/changeStock"
+            android:layout_alignStart="@+id/changeStock"
+            android:text="500$"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+
+        <TextView
+            android:id="@+id/staticDayHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staticDayLow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="High"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dayHighStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/staticDayHigh"
+            android:layout_alignLeft="@+id/dayLowStock"
+            android:layout_alignStart="@+id/dayLowStock"
+            android:text="30$"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+
+        <TextView
+            android:id="@+id/symbolStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staticSymbol"
+            android:layout_alignBottom="@+id/staticSymbol"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/staticChange"
+            android:layout_toRightOf="@+id/staticChange"
+            android:text="AMD"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/priceStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/staticYearHigh"
+            android:layout_alignEnd="@+id/symbolStock"
+            android:layout_alignRight="@+id/symbolStock"
+            android:text="500$"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/avStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staticAv"
+            android:layout_alignBottom="@+id/staticAv"
+            android:layout_toEndOf="@+id/staticYearHigh"
+            android:layout_toRightOf="@+id/staticYearHigh"
+            android:text="2222222"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/staicVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/changeStock"
+            android:layout_alignBottom="@+id/changeStock"
+            android:layout_alignLeft="@+id/staticYearHigh"
+            android:layout_alignStart="@+id/staticYearHigh"
+            android:text="Vol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/staticMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dayHighStock"
+            android:layout_alignBottom="@+id/dayHighStock"
+            android:layout_alignLeft="@+id/staicVolume"
+            android:layout_alignStart="@+id/staicVolume"
+            android:text="Market"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/staticAv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dayLowStock"
+            android:layout_alignBottom="@+id/dayLowStock"
+            android:layout_alignLeft="@+id/staicVolume"
+            android:layout_alignStart="@+id/staicVolume"
+            android:text="AVol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/volumeStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staicVolume"
+            android:layout_alignBottom="@+id/staicVolume"
+            android:layout_toEndOf="@+id/staticYearHigh"
+            android:layout_toRightOf="@+id/staticYearHigh"
+            android:text="sss"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/yearHighStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="100dp"
+            android:layout_toEndOf="@+id/staticYearHigh"
+            android:layout_toRightOf="@+id/staticYearHigh"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/staticYearHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/staticChange"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/priceStock"
+            android:layout_toRightOf="@+id/priceStock"
+            android:text="YearHigh"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/staticYearLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/symbolStock"
+            android:layout_alignBottom="@+id/symbolStock"
+            android:layout_alignLeft="@+id/staticYearHigh"
+            android:layout_alignStart="@+id/staticYearHigh"
+            android:text="YearLow"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yearLowStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="73dp"
+            android:layout_toEndOf="@+id/staticYearLow"
+            android:layout_toRightOf="@+id/staticYearLow"
+            android:text="2555002"
+            android:textColor="#c1c1c1"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/marketStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/staticMarket"
+            android:layout_alignBottom="@+id/staticMarket"
+            android:layout_alignLeft="@+id/avStock"
+            android:layout_alignStart="@+id/avStock"
+            android:text="32B"
+            android:textColor="#c1c1c1"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staticDayHigh"
+            android:text="Chart title"
+            android:id="@+id/charttitle"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#b1cbdb"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/charttitle"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+

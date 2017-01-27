@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbol"
+        android:text="YHOO"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symbol"
+        android:id="@+id/companyname"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#8b8b8b"
+        android:text="Yahoo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-0.20"
+        android:id="@+id/change"
+        android:layout_alignBaseline="@+id/companyname"
+        android:layout_alignBottom="@+id/companyname"
+        android:layout_alignRight="@+id/price"
+        android:layout_alignEnd="@+id/price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:text="1000000"
+
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_above="@+id/companyname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/companyname"
+        android:background="#696666"
+        android:id="@+id/divider"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">StockMarket</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="opendrawer">Open Drawer</string>
+    <string name="closedrawer">Close Drawer</string>
+
+    <array name="Navi">
+        <item>Stocks</item>
+        <item>Currency</item>
+    </array>
+    <string name="title_activity_maps">Map</string>
+</resources>

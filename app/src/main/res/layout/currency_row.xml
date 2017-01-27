@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:text="USD/EGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:text="1/26/2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyDate"
+        android:layout_below="@+id/currencyName"
+        android:layout_marginTop="6dp"
+        android:textColor="#8b8b8b"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:text="9PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currencyName"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/currencyTime"
+        android:textColor="#8b8b8b" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#696666"
+        android:layout_below="@+id/currencyBid"
+        android:id="@+id/divider"/>
+
+    <TextView
+        android:text="Bid:110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyBid"
+        android:layout_below="@+id/currencyAsk"
+        android:layout_marginLeft="225dp"
+        android:textColor="#b1cbdb"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:text="Ask : 110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyAsk"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#b1cbdb" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "943986872959",
+    "firebase_url": "https://stockmarket-85c3d.firebaseio.com",
+    "project_id": "stockmarket-85c3d",
+    "storage_bucket": "stockmarket-85c3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943986872959:android:29253692a9119e3b",
+        "android_client_info": {
+          "package_name": "com.example.biro.stockmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943986872959-oegedv48a1oftikr5kpa26tol4kn2t57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.biro.stockmarket",
+            "certificate_hash": "5B3E096EF8DA910B9EE8857533291BA1938D6D6C"
+          }
+        },
+        {
+          "client_id": "943986872959-9dvasarog41ic3f7f4mfis99cs29kgqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLteEaXqL0JV0N5EeO5ki-Mpg1rhEFz5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943986872959-9dvasarog41ic3f7f4mfis99cs29kgqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
